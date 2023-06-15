@@ -1,0 +1,142 @@
+*,
+*::after
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #262C27;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* убираем марджины тк при использовании normalaze.css сеть стандартные отступ в отличии от rezet.css */
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+.container{
+    max-width: 1230px;
+    /* сверху/сниху паддинг 0, а с лева/права по 15 */
+    padding: 0 15px;
+    /* ставим контент по центру */
+    margin: 0 auto;
+}
+
+.header{
+    background-image: url(../images/header-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
+    position: relative;
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    background-image: url(../images/header-decor.svg);
+    /* прижимаем к низу / левой и правой стороне*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* опускаем елки */
+    transform: translateY(50%);
+    z-index: 2;
+}
+
+.header::after{
+    content: '';
+    position: absolute;
+    background-image: url(../images/header-decor.svg);
+    /* прижимаем к низу / левой и правой стороне*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* опускаем елки */
+    transform: translateY(95%) rotate(180deg);
+    z-index: 3;
+}
+
+
+.header__top{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    padding: 57px 0;
+    gap: 100px;
+    justify-content: flex-end;
+}
+
+.logo path{
+    transition: fill .3s ease;
+}
+
+.logo:hover path{
+    fill: #0093A1;
+    transition: fill .3s ease;
+}
+
+.header__btn{
+    text-transform: uppercase;
+    color: #fff;
+    padding: 12px 71px;
+    background-color: #262C27;
+    border: none;
+    cursor: pointer;
+}
+
+.header__content{
+    /* делаем высоту во весь контент минуст 161 пх высота верхней части */
+    min-height: calc(100vh - 161px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.header__content-box{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    max-width: 550px;
+    text-align: center;
+    margin-right: 30px;
+    color: #fff;
+}
+
+.header__title{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    /* из фигмы */
+    font-size: 64px;
+    line-height: 71px
+}
+
+.header__text{
+    font-size: 24px;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+.header__decor-text{
+    position: absolute;
+    
+}
