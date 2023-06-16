@@ -38,6 +38,9 @@ h1, h2, h3, h4, h5, h6, p{
     background-position: center;
     position: relative;
 }
+.header__phone{
+    color: #B9C400;
+}
 
 .header::before{
     content: '';
