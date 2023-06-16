@@ -18,14 +18,14 @@ a{
     color: inherit;
 }
 /* убираем марджины тк при использовании normalaze.css сеть стандартные отступ в отличии от rezet.css */
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, p{
     margin: 0;
 }
 
 .container{
     max-width: 1230px;
     /* сверху/сниху паддинг 0, а с лева/права по 15 */
-    padding: 0 15px;
+    padding: 0 25px;
     /* ставим контент по центру */
     margin: 0 auto;
 }
@@ -138,5 +138,38 @@ h1, h2, h3, h4, h5, h6{
 
 .header__decor-text{
     position: absolute;
-    
+    bottom: 10px;
+    color: #0093A1;
+
+}
+
+.header__decor-text--1{
+    z-index: 1;
+    right: 145px;
+    bottom: 90px;
+}
+
+.header__decor-text--1,
+.header__decor-text--2{
+    font-family: 'Comfortaa', cursive;
+    font-size: 130px;
+    line-height: 145px;
+    opacity: 0.3;
+}
+
+.header__decor-text--2{
+    z-index: 4; 
+    left: 300px;
+    bottom: 0;
+}
+
+.header__decor-text--3{
+    text-align: center;
+    max-width: 360px;
+    right: 145px;
+    z-index: 4;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
 }
