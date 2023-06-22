@@ -215,7 +215,7 @@ ul{
 }
 
 .info__top-text{
-    padding-top: 375px;
+    padding-top: 425px;
     width: 290px;
     color: #fff;
     position: relative;
@@ -227,7 +227,7 @@ ul{
 
 .info__top-text--two{
     border-bottom: 1px solid #fff;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 
 .info__top-img{
