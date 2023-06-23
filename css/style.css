@@ -288,3 +288,88 @@ ul{
 .info__specs-caption{
     width: 185px;
 }
+
+.buy{
+    padding: 150px 0;
+}
+
+.buy__inner{
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.buy__content{
+    width: 510px;
+    position: relative;
+}
+
+.buy__title{
+    margin-bottom: 50px;
+    font-size: 60px;
+    line-height: 67px;
+    color: #0093A1;
+}
+
+.buy__list{
+    margin-bottom: 25px;
+}
+
+.buy__item{
+    margin-bottom: 25px;
+    width: 285px;
+}
+/* изменение цвета при наведении на тайтл */
+.buy__item:hover .buy__item-title{
+    color: #0093A1;
+}
+
+.buy__item-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+    /* добавим плавности при смене цвета */
+    transition: color .3s;
+}
+
+.buy__price{
+    position: absolute;
+    /* выставляем звезду на место */
+    right: 0;
+    bottom: 130px;
+     /* выставляем звезду на место */
+    width: 201px;
+    height: 199px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/star.svg);
+}
+
+.buy__btn{
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    background-color: transparent;
+    border: 2px solid #0093A1;
+    color: #0093A1;
+    cursor: pointer;
+    /* задаем форму кнопке */
+    padding: 18px;
+    text-align: center;
+    max-width: 484px;
+    width: 100%;
+    transition: all .3s;
+}
+
+.buy__btn:hover{
+    background-color: #B9C400;
+    /* border: none; */
+    border-color: #B9C400;
+    color: #262C27;
+}
