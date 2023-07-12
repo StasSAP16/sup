@@ -61,6 +61,11 @@ img{
 }
 .header__phone{
     color: #B9C400;
+    transition: transform .3s;
+}
+
+.header__phone:hover{
+    transform: scale(1.3);
 }
 
 .header::before{
