@@ -605,6 +605,14 @@ img{
     line-height: 22px;
     color: #000;
     cursor: pointer;
+    transition: all .3s;
+}
+
+.footer__form-btn:hover{
+    background-color: #B9C400;
+    /* border: none; */
+    border-color: #B9C400;
+    color: #262C27;
 }
 
 .footer__social-title{
